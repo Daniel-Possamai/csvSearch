@@ -35,7 +35,7 @@ py --version
 - Abra o terminal integrado no Visual Studio Code.
 - Navegue até o diretório onde o script csvSearch.py está localizado. Use o comando cd para isso. Por exemplo:
 ```bash
-cd C:\\Users\\Daniel Possamai\\Documents\\pythonn\\testes
+cd C:\\seu\\diretorio\\com\\o\\arquivo\\csvSearch.py
 ```
 -Execute o script usando o comando python seguido do nome do arquivo. Por exemplo:
 ```bash
