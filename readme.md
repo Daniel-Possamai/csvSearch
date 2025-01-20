@@ -43,9 +43,9 @@ python csvSearch.py
 ```
 
 ## Configuração do Script
-- O script está configurado para procurar os seguintes GTINs:
+- O script está configurado para procurar as seguintes informações:
 ```bash
-gtins = [
+search_terms = [
     '123', '1234', '12345'
 ]
 ```
