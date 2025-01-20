@@ -1,6 +1,6 @@
 # CSV Search Script
 
-Este script Python procura por GTINs específicos em arquivos CSV dentro de uma pasta e grava os resultados em um arquivo CSV de saída.
+Este script Python procura por informações específicas em arquivos CSV dentro de uma pasta e grava os resultados em um arquivo CSV de saída.
 
 ## Pré-requisitos
 
