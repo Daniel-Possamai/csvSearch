@@ -12,6 +12,9 @@ def search_terms_in_csv(folder_path, search_terms, output_file):
             file_path = os.path.join(folder_path, filename)
             terms_found_in_file = 0
             
+            # Log do arquivo que está sendo processado
+            print(f"Processando arquivo: {filename}")
+            
             # Abra o arquivo CSV e crie um leitor de CSV
             with open(file_path, mode='r', encoding='utf-8-sig') as csvfile:
                 csvreader = csv.reader(csvfile)
@@ -26,9 +29,9 @@ def search_terms_in_csv(folder_path, search_terms, output_file):
 
             # Log do arquivo processado e termos encontrados
             if terms_found_in_file > 0:
-                print(f"Arquivo processado: {filename}, informações encontradas: {terms_found_in_file}")
+                print(f"Arquivo processado: {filename}, termos encontrados: {terms_found_in_file}")
             else:
-                print(f"Arquivo processado: {filename}, nenhuma informação encontrada")
+                print(f"Arquivo processado: {filename}, nenhum termo encontrado")
             total_terms_found += terms_found_in_file
     
     # Escreva os resultados no arquivo CSV de saída
@@ -39,9 +42,9 @@ def search_terms_in_csv(folder_path, search_terms, output_file):
 
     # Log do total de termos encontrados
     if total_terms_found > 0:
-        print(f"Total de informações encontradas: {total_terms_found}")
+        print(f"Total de termos encontrados: {total_terms_found}")
     else:
-        print("Nenhuma informação encontrada em nenhum arquivo")
+        print("Nenhum termo encontrado em nenhum arquivo")
 
 # Defina o caminho da pasta onde os arquivos CSV estão localizados
 folder_path = 'C:\\seu\\diretorio\\com\\os\\arquivos\\csv'
